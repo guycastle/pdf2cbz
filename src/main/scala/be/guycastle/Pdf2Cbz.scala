@@ -31,7 +31,7 @@ object Pdf2Cbz {
 
   def main(args: Array[String]): Unit = {
     val cmd = new DefaultParser().parse(OPTIONS, args)
-    val source = cmd.getOptionValue(OPT_SOURCE, "")
+    val source = cmd.getOptionValue(OPT_SOURCE, ".")
     val recursive = cmd.hasOption(OPT_RECURSIVE)
     val deleteOriginal = cmd.hasOption(OPT_DELETE_ORIGINAL)
     FileUtils.iterateFiles(Paths.get(source).toFile, Array(EXT_PDF.toUpperCase, EXT_PDF.toLowerCase), recursive).asScala
