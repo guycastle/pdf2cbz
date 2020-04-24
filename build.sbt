@@ -2,7 +2,7 @@ import com.typesafe.sbt.packager.windows.{AddDirectoryToPath, ComponentFile, Win
 
 name := "pdf2cbz"
 
-version := "1.0.1-SNAPSHOT"
+version := "1.0.1"
 
 scalaVersion := "2.13.2"
 
