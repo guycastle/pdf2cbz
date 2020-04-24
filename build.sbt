@@ -57,8 +57,12 @@ lazy val pdfBoxVersion = "2.0.19"
 lazy val cliVersion = "1.4"
 lazy val commonsIoVersion = "2.6"
 lazy val slf4jVersion = "1.7.30"
+lazy val jaiImageIoVersion = "1.4.0"
+lazy val jaiJpeg2000Version = "1.3.0"
 
 libraryDependencies ++= Seq(
+  "com.github.jai-imageio" % "jai-imageio-core" % jaiImageIoVersion,
+  "com.github.jai-imageio" % "jai-imageio-jpeg2000" % jaiJpeg2000Version,
   "org.apache.pdfbox" % "pdfbox" % pdfBoxVersion,
   "commons-cli" % "commons-cli" % cliVersion,
   "commons-io" % "commons-io" % commonsIoVersion,
