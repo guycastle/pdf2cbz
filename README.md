@@ -3,7 +3,7 @@ Small util to convert PDF comic books to CBZ format
 
 ## Build
 
-Create an MSI installer with:
+Create an MSI installer with (requires the [Wix Toolset](https://wixtoolset.org/) to be installed):
 
 ```bash
 sbt windows:packageBin
